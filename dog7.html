@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="kor">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0px;
+        }
+
+        span:hover {
+            color: rgb(27, 27, 248)
+        }
+
+        nav {
+            width: 850px;
+            height: 50px;
+            margin-left: 250px;
+            margin-top: 30px;
+
+        }
+
+        span {
+            color: black;
+            font-weight: bolder;
+            font-size: large;
+            margin-left: 5px;
+
+        }
+
+        #logobox {
+            float: left;
+            width: 150px;
+            height: 100px;
+            margin-left: -120px;
+            margin-top: -10px;
+           
+
+
+        }
+
+        section {
+            float: left;
+            width: 1257px;
+            height: 700px;
+            margin-top: 100px;
+        }
+
+        table {
+            border-top: solid 1.3px rgb(171, 163, 163);
+            border-collapse: collapse;
+            width: 100%;
+            font-size: 12px;
+
+        }
+
+        img {
+            display: block;
+            width: 100%;
+            max-width: 100px;
+            height: auto;
+            margin: auto;
+        }
+
+        #se1 {
+            float: left;
+            width: 615px;
+            height: 700px;
+            border: 1.5px solid rgb(171, 163, 163);
+
+        }
+
+        #se2 {
+            float: left;
+            width: 615px;
+            height: 700px;
+            margin-left: 10px;
+            border: 1.5px solid rgb(171, 163, 163);
+        }
+
+        .cart_list1 {
+            width: 600px;
+            height: 50px;
+            margin-top: 10px;
+        }
+
+        .cart-list2 {
+            width: 600px;
+            height: 50px;
+            margin-top: 500px;
+        }
+
+        thead {
+            text-align: center;
+            font-weight: bold;
+        }
+
+        tbody {
+            font-size: 13px;
+        }
+
+        td {
+            padding: 15px 0px;
+            border-bottom: 1px solid rgb(171, 163, 163);
+        }
+
+        .cart__list__detail :nth-child(2),
+        .cart__list__detail :nth-child(3),
+        .cart__list__detail :nth-child(4),
+        .cart__list__detail :nth-child(5),
+        .cart__list__detail :nth-child(6) {
+            text-align: center;
+            font-weight: normal;
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        .cart__list__option {
+            text-align: center;
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        .cart__list__detail :nth-child(2),
+        .cart__list__detail :nth-child(3),
+        .cart__list__detail :nth-child(4),
+        .cart__list__detail :nth-child(5),
+        .cart__list__detail :nth-child(6) {
+            border-left: 1px solid rgb(171, 163, 163);
+        }
+
+        .cart__list__detail :nth-child(2),
+        .cart__list__detail :nth-child(3),
+        .cart__list__detail :nth-child(4),
+        .cart__list__detail :nth-child(5),
+        .cart__list__detail :nth-child(6) {
+            text-align: center;
+
+        }
+
+        .price {
+            font-weight: normal;
+            font-size: 14px;
+        }
+
+        tbody td {
+            text-align: center;
+        }
+
+        .cart__list__orderbtn {
+            border: 2px black solid;
+            background-color: rgb(242, 240, 240);
+            color: black;
+            border-radius: 10px;
+        }
+
+        #search {
+            width: 600px;
+            height: 42px;
+            margin-top: -18px;
+
+            /*border: 1px solid black;*/
+        }
+
+        .container-fluid {
+            margin-top: -34px;
+        }
+
+        .d-flex {
+            margin-left: -140px;
+        }
+
+        .form-control {
+            width: 270px;
+            height: 38px;
+            border: 1.4px solid lightskyblue;
+            margin-top: 10px;
+        }
+
+        .btn {
+            margin-left: 40px;
+            border: 1.4px solid lightskyblue;
+            color: lightskyblue;
+            height: 40px;
+            margin-top: 10px;
+
+        }
+
+        .btn:hover {
+            background-color: lightskyblue;
+            color: white;
+        }
+
+        h3 {
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 18px;
+        }
+
+        #btn-container {
+            position: relative;
+            width: 80px;
+            height: 30px;
+            margin-top: 500px;
+            /* 원하는 위치로 조정하세요 */
+            margin-left: 300px;
+            /* 원하는 위치로 조정하세요 */
+            border: 1px solid black;
+        }
+
+        #save_button {
+            width: 80px;
+            height: 30px;
+            margin-left: 930px;
+            margin-top: 10px;
+            border-radius: 10px;
+        }
+
+        #save {
+
+            width: 1257;
+            height: 40px;
+            margin-top: 700px;
+
+        }
+
+        table.cart_list1 td,
+        table.cart_list2 td {
+            text-align: center;
+            font-weight: normal;
+            font-size: 14px;
+            border-left: 1px solid rgb(171, 163, 163);
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav>
+        <div id="logobox">
+            <a href="dog1.html"><img src="dog/유니크 로고.PNG" width="500" height="150"></a>
+        </div>
+        <ul class="nav nav-underline">
+            <li class="nav-item">
+                <a class="nav-link" href="dog2.html">
+                    <span>소개</span></a>
+            <li></li>
+            <li></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dog3.html">
+                    <span>반려견 이해하기</span></a>
+            <li></li>
+            <li></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dog4.html"><span>반려견 보기</span></a>
+            <li></li>
+            <li></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dog5.html"><span>입양신청</span></a>
+            <li></li>
+            <li></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dog6.html"><span>관심반려견</span></a>
+            <li></li>
+            <li></li>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="dog7.html"><span>반려견 검색</span></a>
+            <li></li>
+            <li></li>
+            </li>
+        </ul>
+    </nav>
+    <section>
+        <div id="se1">
+            <div id="search">
+                <nav class="navbar bg-body-tertiary">
+                    <div class="container-fluid">
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="검색하기" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+            <table class="cart_list1">
+                <thead>
+                    <tr>
+                        <td>사진</td>
+                        <td>애견 이름</td>
+                        <td>담기</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="cart__list__detail">
+                        <td><img src="dog/얼1.png"></td>
+                        <td>
+                            <p>애플</p>
+                        <td><button class="cart__list__orderbtn" onclick="add('dog/얼1.png', '애플', event)">담기</button>
+                        </td>
+                    </tr>
+                    <tr class="cart__list__detail">
+                        <td><img src="dog/얼6.png"></td>
+                        <td>
+                            <p>망고</p>
+                        <td><button class="cart__list__orderbtn" onclick="add('dog/얼6.png', '망고', event)">담기</button>
+                        </td>
+                    </tr>
+                    <tr class="cart__list__detail">
+                        <td><img src="dog/얼8.png"></td>
+                        <td>
+                            <p>뚱이</p>
+                        <td><button class="cart__list__orderbtn" onclick="add('dog/얼8.png', '뚱이', event)">담기</button>
+                        </td>
+                    </tr>
+                    <tr class="cart__list__detail">
+                        <td><img src="dog/얼12.png"></td>
+                        <td>
+                            <p>포로리</p>
+                        <td><button class="cart__list__orderbtn" onclick="add('dog/얼12.png', '포로리', event)">담기</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="se2">
+            <h3>관심리스트</h3>
+            <table class="cart_list2">
+                <thead>
+                    <tr>
+                        <td>사진</td>
+                        <td>애견 이름</td>
+                        <td>삭제</td>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+
+            </table>
+        </div>
+
+        </div>
+        <div id="save">
+            <button id="save_button" onclick="save()">저장</button>
+        </div>
+    </section>
+    <script>
+        //담기 번튼 클릭 시 실행
+        function add(photo, name, event) {
+            event.preventDefault();
+            var favoritesTable = document.querySelector('#se2 .cart_list2 tbody');
+            var newRow = favoritesTable.insertRow();
+            var cell1 = newRow.insertCell(0);
+            cell1.innerHTML = '<img src="' + photo + '" />';
+            var cell2 = newRow.insertCell(1);
+            cell2.textContent = name;
+            var cell3 = newRow.insertCell(2);
+            var delButton = document.createElement('button');
+            delButton.textContent = '삭제';
+            delButton.style.borderRadius = "10px";
+            delButton.onclick = function () {
+                del(this);
+            };
+            cell3.appendChild(delButton);
+            var currentRow = event.target.closest('tr');
+            currentRow.remove();
+        }
+
+        // 삭제 버튼 클릭 시 실행
+        function del(button) {
+            var currentRow = button.closest('tr');
+            var leftTable = document.querySelector('#se1 .cart_list1 tbody');
+            var newRow = leftTable.insertRow();
+            var cells = currentRow.querySelectorAll('td');
+            for (var i = 0; i < cells.length - 1; i++) {
+                var newCell = newRow.insertCell(i);
+                newCell.innerHTML = cells[i].innerHTML;
+            }
+            var addButtonCell = newRow.insertCell(cells.length - 1);
+            var addButton = document.createElement('button');
+            addButton.textContent = '담기';
+            addButton.style.borderRadius = "10px";
+            addButton.onclick = function () {
+                add(cells[0].querySelector('img').src, cells[1].textContent, event);
+            };
+            addButtonCell.appendChild(addButton);
+            currentRow.remove();
+        }
+        //관심리스트에 추가된 강아지를 저장
+        function save() {
+            let rows = document.querySelectorAll('.cart_list2 tbody tr');
+            if (rows.length === 0) {
+                alert("반려견을 담아주세요");
+            } else {
+                alert("관심반려견에 등록되었습니다");
+            }
+        }
+    </script>
+</body>
+
+</html>

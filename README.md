@@ -5,7 +5,8 @@
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 반려견 종합 정보 시스템 </h2>  
     <div style="font-weight: 700; font-size: 15px; text-align: center; color: #282d33;"> 주제 : 반려견 종합 정보 시스템<br><br>
       기능 : 반려견 등록, 수정, 삭제, 조회, 검색 등<br><br>
-      성과 : HTML의 돔 구조를 이해하고 CSS로 frontend를 제작</li>JavaScript를 사용해서 유효성 체크와 동적 화면을 구현 </div> 
+      성과 : HTML의 돔 구조를 이해하고 CSS로 frontend를 제작<br>
+        JavaScript를 사용해서 유효성 체크와 동적 화면을 구현 </div> 
     </div>
     <div align= "center">
     <h2 style="border-bottom: 1px solid #d8dee4; color: #282d33;"> 🛠️ Tech Stacks </h2> <br> 
